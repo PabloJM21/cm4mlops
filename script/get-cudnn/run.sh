@@ -1,7 +1,9 @@
 #!/bin/bash
 if [ ${CM_TMP_RUN_COPY_SCRIPT} == "yes" ]; then
-    echo ${CM_TMP_INC_PATH}
-    echo ${CM_CUDA_PATH_INCLUDE}
+
+    echo ${CM_TMP_INC_PATH} > paths.txt
+    echo ${CM_CUDA_PATH_INCLUDE} >> paths.txt
+
     cmd="$cp   ${CM_TMP_INC_PATH}/*.h   ${CM_CUDA_PATH_INCLUDE}/"
     echo $cmd
     eval $cmd
