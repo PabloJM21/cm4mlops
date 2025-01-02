@@ -40,7 +40,7 @@ def preprocess(i):
                 return {'return': 0}
 
         
-        echo env.get('CM_INPUT', '')
+        print(env.get('CM_INPUT', ''))
         if env.get('CM_INPUT', '').strip() == '':
             if os_info['platform'] == 'windows':
                 if env.get('CM_TMP_PATH', '').strip() == '':
