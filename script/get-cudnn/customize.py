@@ -6,6 +6,9 @@ import shutil
 
 def preprocess(i):
 
+    print("Environment variables:", env)
+
+
     recursion_spaces = i['recursion_spaces']
 
     os_info = i['os_info']
