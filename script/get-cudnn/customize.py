@@ -6,14 +6,15 @@ import shutil
 
 def preprocess(i):
 
-    print("Environment variables:", env)
-
 
     recursion_spaces = i['recursion_spaces']
 
     os_info = i['os_info']
 
     env = i['env']
+
+    #Redirect stdout to the Slurm output file
+    sys.stdout = open(os.path.join(os.getcwd(), 'logs/mlperf-%x-%j.out'), 'a')
 
     print("Environment variables:", env)
 
