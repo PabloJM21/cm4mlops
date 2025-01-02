@@ -39,6 +39,8 @@ def preprocess(i):
                 env['CM_CUDA_PATH_LIB_CUDNN'] = path
                 return {'return': 0}
 
+        
+        echo env.get('CM_INPUT', '')
         if env.get('CM_INPUT', '').strip() == '':
             if os_info['platform'] == 'windows':
                 if env.get('CM_TMP_PATH', '').strip() == '':
