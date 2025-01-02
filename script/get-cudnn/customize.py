@@ -15,6 +15,8 @@ def preprocess(i):
 
     env = i['env']
 
+    print("Environment variables:", env)
+
     env['CM_TMP_RUN_COPY_SCRIPT'] = "no"
 
     # If TAR file is not explicitly specified, search
