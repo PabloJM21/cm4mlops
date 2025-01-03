@@ -14,7 +14,7 @@ cache: true
 category: CUDA automation
 
 default_env:
-  CM_INPUT: ''
+  CM_INPUT: /sw/rev/24.05/rome_ib_cuda_rocky8/linux-rocky8-zen2/gcc-11.4.0/cudnn-8.9.7.29-11-ziml6hcow5cgs64gvqfrozvqfrozb3hyz4ck43/lib/libcudnn.so.8.9.7
   CM_SUDO: sudo
 
 deps:
