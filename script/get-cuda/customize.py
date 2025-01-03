@@ -9,6 +9,11 @@ def preprocess(i):
 
     env = i['env']
 
+    #Redirect stdout to the Slurm output file
+    #sys.stdout = open(os.path.join(os.getcwd(), 'logs/mlperf-%x-%j.out'), 'a')
+
+    print("Environment variables:", env)
+
     if str(env.get('CUDA_SKIP_SUDO', '')).lower() == 'true':
         env['CM_SUDO'] = ''
 
