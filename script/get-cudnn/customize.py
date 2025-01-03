@@ -13,10 +13,7 @@ def preprocess(i):
 
     env = i['env']
 
-    #Redirect stdout to the Slurm output file
-    sys.stdout = open(os.path.join(os.getcwd(), 'logs/mlperf-%x-%j.out'), 'a')
-
-    print("Environment variables:", env)
+    
 
     env['CM_TMP_RUN_COPY_SCRIPT'] = "no"
 
